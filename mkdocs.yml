@@ -1,7 +1,7 @@
 site_name: geohey
 site_description: A Python package demo for geospatial analysis
 site_author: giswqs
-site_url: https://geohey.xyz
+site_url: https://geohey.gishub.org
 repo_url: https://github.com/giswqs/geohey
 
 copyright: "Copyright &copy; 2024 - 2024 Qiusheng Wu"
@@ -50,7 +50,7 @@ plugins:
           execute: True
           allow_errors: false
           ignore: ["conf.py"]
-          execute_ignore: ["*ignore.ipynb"]
+          execute_ignore: ["labs/lab5.ipynb", "labs/lab4.ipynb", "vector.ipynb"]
 
 markdown_extensions:
     - admonition
@@ -82,10 +82,12 @@ nav:
     - API Reference:
           - geohey module: geohey.md
           - common module: common.md
+          - utils module: utils.md
     - Examples:
           - examples/intro.ipynb
           - examples/random.ipynb
           - examples/demo.ipynb
+          - examples/csv.ipynb
     - Python Basics:
           - python/01_getting_started.ipynb
           - python/02_variables_data_types.ipynb
@@ -99,3 +101,4 @@ nav:
           - python/10_files_and_exceptions.ipynb
     - Labs:
           - labs/lab4.ipynb
+          - labs/lab5.ipynb
